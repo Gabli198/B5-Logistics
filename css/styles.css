@@ -2,6 +2,7 @@
     --black: #020202;
     --off-white: #f1efe8;
     --safety-green: #3D8B37;
+    --concrete: #8c8c88;
 }
 
 * {
@@ -123,4 +124,90 @@ body{
     height: 56px;
     border-radius: 6px;
     padding: 16px 32px;
+}
+
+/* After section */
+.who-we-are {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+
+.who-we-are ul {
+    color: var(--safety-green);
+    
+}
+
+li::marker {
+    color: #020202;
+}
+
+.who-we-are hr {
+    border: 1.5px solid black;
+    display: block;
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+}
+
+.who-we-are div {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    max-height: 66px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 117px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 4rem;
+}
+
+.cards div, .cards p{
+    align-items: center;
+    text-align: center;
+}
+
+.cards div{
+    width: 353px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(from var(--safety-green) r g b / 0.7);
+    padding: 32px;
+    font-weight: bold;   
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.cards div img{
+    height: 50px;
+    width: 50px;
+}
+
+/* stats */
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--concrete);
+    max-width: 1003px;
+    
+}
+
+.stats div{
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    width: 100%;
 }
