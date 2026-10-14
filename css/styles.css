@@ -69,6 +69,7 @@ body{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 /* Hero Section */
@@ -359,7 +360,7 @@ li::marker {
 
 footer hr{
     border: 1px solid var(--concrete);
-    margin: 10px auto 20px auto;
+    margin: 25px auto 40px auto;
     width: 100%;
 }
 
@@ -375,3 +376,5 @@ footer hr{
     font-weight: bold;
     font-size: 15px;
 }
+
+
