@@ -392,129 +392,111 @@ body{
     width: 100%;
     background-color: var(--black);
 }
-/* CTA*/
-.CTA{
-    width: 100%;
-    max-width: 839px;
+/* ========== 10. CTA Banner ========== */
+.CTA {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    height: 130px;
-    background-color: var(--safety-green);
-    margin: 0 auto 3rem auto;
-    padding: 4rem 2rem;
+    gap: 20px;
+    width: min(calc(100% - 2 * var(--gutter)), 839px);
+    margin: 0 auto 48px;
+    padding: 36px 24px;
+    text-align: center;
     color: var(--off-white);
+    background-color: var(--safety-green);
 }
 
-.CTA h3{
-    font-weight: bold;
-    font-size: 1.75em;
+.CTA h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+/* ========== 11. Footer ========== */
+
+.footer-section {
+    padding: 36px var(--gutter) 20px;
+    color: var(--off-white);
+    background-color: var(--black);
+}
+
+.big-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
     text-align: center;
 }
 
-.CTA div{
-    background-color: var(--black);
-    width: 180px;
-    height: 56px;
-    display: inline-flex;
-    border-radius: 8px;
+.logo-links {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1.75rem 1.1rem;
-    font-weight: bold;
+    gap: 24px;
 }
 
-/* footer */
-
-.footer-section{
-    width: 100%;
-    min-height: 240px;
-    color: var(--off-white);
-    background-color: var(--black);
-    padding: 15px 50px;
-    position: relative;
-    
-}
-
-.big-3{
-    display: flex;
-    gap: 280px;
-    position: relative;
-}
-.logo-links{
-    display: inline-flex;
-    gap: 110px;
-}
-
-.footer-section img {
-    width: 50px;
-    height: 50px;
-    padding:0.5rem 0.5rem;
-    margin: 0;
-}
-
-.footer-logo{
+.footer-logo {
     display: flex;
     flex-direction: column;
-    width: 365px;
+    align-items: center;
+    gap: 4px;
 }
 
-.footer-logo h3 {
-    font-size: 28px;
+.footer-section .logo img {
+    width: 48px;
+    height: 48px;
+    padding: 0.4rem;
 }
 
-.footer-logo p{
-    font-size: 15;
-    font-weight: bold;
-}
+.footer-logo h2 { font-size: 1.5rem; }
+.footer-logo h3 { font-size: 1.25rem; }
+.footer-logo p  { font-size: 0.9375rem; font-weight: 700; }
 
-.footer-links{
+.footer-links {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.3rem;
 }
 
-.quick-links{
+.quick-links {
     color: var(--safety-green);
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.footer-links a, .contact-info a{
+.footer-links a,
+.footer-contact a {
+    font-weight: 700;
     text-decoration: none;
-    color: var(--off-white);
-    font-weight: bold;
 }
 
-.contact-info{
+.footer-contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
-.soc-med img{
-    width: 50px;
-    height: 50px;
+.soc-med {
+    display: flex;
+    gap: 12px;
 }
 
-footer hr{
-    border: 1px solid var(--concrete);
-    margin: 25px auto 40px auto;
-    width: 100%;
+.soc-med img {
+    width: 40px;
+    height: 40px;
 }
 
-.copyright{
-    margin: 0 auto;
-    width: 100%;
+footer hr {
+    height: 1px;
+    margin: 28px 0 20px;
+    border: 0;
+    background-color: var(--concrete);
+}
+
+.copyright {
     text-align: center;
-    padding: 0;
-    
-}
-
-.copyright p{
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9375rem;
+    font-weight: 700;
 }
 
 
