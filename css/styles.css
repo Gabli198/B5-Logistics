@@ -268,74 +268,76 @@ body{
 }
 
 
-/* After section */
+/* ========== 6. Intro (WHO WE ARE) ========== */
 .who-we-are {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 20px;
+    padding: 56px var(--gutter);
     align-items: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    text-align: center;
 }
 
-
-.who-we-are ul {
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: var(--safety-green);
-    
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-li::marker {
-    color: #020202;
+.eyebrow::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--safety-green);
 }
 
 .who-we-are hr {
-    border: 1.5px solid black;
-    display: block;
-    margin-top: 2.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--black);
+    height: 3px;
+    border: 0;
     width: 5em;
 }
 
-.who-we-are div {
-    display: flex;
-    flex-direction: column;
+.intro-text {
     max-width: 750px;
-    max-height: 66px;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 117px;
 }
 
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    margin-bottom: 4rem;
+.intro-text h2{
+    margin-bottom: 16px;
+    font-size: 1.5rem;
 }
 
-.cards div, .cards p{
-    align-items: center;
-    text-align: center;
+/* ========== 7. Service Cards ========== */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--gutter) 56px;
 }
 
-.cards div{
-    width: 353px;
-    height: 218px;
+.cards article {
     display: flex;
     flex-direction: column;
-    background-color: rgb(from var(--safety-green) r g b / 0.7);
-    padding: 32px;
-    font-weight: bold;   
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    align-items: center;
+    gap: 10px;
+    padding: 28px 24px;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(61, 139, 55, 0.7);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cards div img{
-    height: 50px;
-    width: 50px;
-}
+.cards img { width: 50px; height: 50px; }
+.cards h3  { font-size: 1.0625rem; }
+.cards p   { font-size: 0.9375rem; }
 
 /* stats */
 .stats{
