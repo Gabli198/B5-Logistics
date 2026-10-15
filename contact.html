@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,17 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <title>Contact Page</title>
+    <title>Contact | B5 Logistics</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <div class="logo">
-                <img src="images/B5_LOGO NO BG.png" alt="B5 LOGO">
-            <h1>B5 Logistics</h1>
-            </div>
+        <nav id="navbar" aria-label="Main">
+            <a class="logo" href="index.html"><img src="images/B5_LOGO NO BG.png" alt="B5 LOGO">
+            <span class="brand-name">B5 Logistics</span>  </a>
             
-            <ul class="nav-list">
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navList">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-list" id="navList">
                 <li><a href="/">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -30,7 +35,7 @@
     <main>
         <div class="container">
             <div class="text-header">
-                <h1>CONTACT US</h1>
+                <h1>Contact Us</h1>
                 <p>Learn more about our company or message us directly</p>
             </div>
 
@@ -110,18 +115,21 @@
                 </div>
                 <div class="footer-links">
                     <h3 class="quick-links">Quick Links</h3>
-                    <p><a href="#">Home</a></p>
-                    <p><a href="#">Services</a></p>
-                    <p><a href="#">Contact</a></p>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="contact.html">Contact</a></p>
                 </div>
             </div>
-            <div class="contact-info">
+           <div class="contact-info">
                 <p><a href="tel:+09212612084">Contact Info:  +639212612084</a></p>
                 <p><a href="mailto:b5logistics@gmail.com">Email: b5logistics@gmail.com</a></p>
                 <div class="soc-med">
-                    <img src="images/twitter 1.png" alt="twitter" >
-                    <img src="images/instagram (1) 1.png" alt="ig">
-                    <img src="images/facebook (1) 1.png" alt="fb">
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="B5 Logistics on X (Twitter)"><img src="images/twitter 1.png" alt="twitter" ></a>
+                    
+                    <a href="https://www.instagram.com.christructure" target="_blank" rel="noopener" aria-label="B5 Logistics on Instagram"><img src="images/instagram (1) 1.png" alt="ig"></a>
+                    
+                    <a href="https://www.facebook.com.christructure" target="_blank" rel="noopener" aria-label="B5 Logistics on Facebook"><img src="images/facebook (1) 1.png" alt="fb"></a>
+                    
                 </div>
             </div>
             </div>
