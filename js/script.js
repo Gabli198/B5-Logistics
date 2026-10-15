@@ -1,14 +1,13 @@
 /* ========================================================
   B5 Logistics - script.js
-  1. Hamburger menu
-  2. Current page link
-  3. Stats counter
-  4. Contact form
-======================================================== */
+    Hamburger menu
+    Current page link
+    Stats counter
+    Contact form */
 
 "use strict";
 
-// ========== 1. Hamburger Menu ========== 
+// Hamburger Menu 
 const navToggle = document.getElementById("navToggle");
 const navList = document.getElementById("navList");
 function setMenu(isOpen){
@@ -48,7 +47,7 @@ if (navToggle && navList) {
         });
 }
 
-// ========== 2. Marking the current page ========== 
+// Marking the current page 
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const navLinks = Array.from(document.querySelectorAll(".nav-list a"));
 
@@ -58,7 +57,7 @@ for (const link of navLinks) {
     }
 }
 
-// ========== 3. Stats Counter (array + loop) ========== 
+// Stats Counter 
 const statNumbers = document.querySelectorAll(".stat-number");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -103,7 +102,7 @@ if (statNumbers.length > 0) {
         }
     }
 }
-/* ========== 4. Contact Form (object + methods + conditions) ========== */
+// Contact Form 
 const contactForm = document.querySelector(".contact-form");
 const formStatus = document.getElementById("formStatus");
 
@@ -119,15 +118,15 @@ function clearStatus() {
 
 function validateForm() {
     const name = contactForm.elements["name"].value.trim();
-    const phone = contactForm.elements["phone"].value.trim();
+    const email = contactForm.elements["email"].value.trim();
     const message = contactForm.elements["message"].value.trim();
 
     if (name.length < 2) {
         return "Please enter your name.";
     }
 
-    if (phone !== "" && !/^[+\d][\d\s-]{6,}$/.test(phone)) {
-        return "Please enter a valid phone number.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return "Please enter a valid email address.";
     }
 
     if (message.length < 10) {
@@ -150,10 +149,10 @@ if (contactForm && formStatus) {
 
         const name = contactForm.elements["name"].value.trim();
 
-        // No server is connected yet, so this is only a demo.
+        
         showStatus("Thank you, " + name + ". The form passed validation, but your message was not sent.", "success");
-        contactForm.reset();
+        
     });
-
+    
     contactForm.addEventListener("reset", clearStatus);
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/B5_LOGO NO BG.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,11 +34,12 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="text-header">
+         <div class="text-header">
                 <h1>Contact Us</h1>
                 <p>Learn more about our company or message us directly</p>
             </div>
+        <div class="container">
+           
 
             <section class="history">
                 <div class="contact-row">
@@ -50,7 +52,7 @@
             </section>
 
             <section class="contact">
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form" action="#" method="post" novalidate>
                     <fieldset>
                         <legend>Contact Details</legend>
 
@@ -73,8 +75,10 @@
                             <button type="submit" class="btn-submit">Submit</button>
                             <button type="reset" class="btn-reset">Reset</button>
                         </div>
+                        <p id="formStatus" class="form-status" aria-live="polite"></p>
                     </fieldset>
                 </form>
+                
 
                 <aside class="contact-info">
                     <h2><img src="/images/phone-call 1.png" alt="telephone image">Get in Touch</h2>
