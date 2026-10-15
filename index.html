@@ -10,17 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <title>Home Page</title>
+    <title>B5 Logistics | Bulk Construction Materials Hauling</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <div class="logo">
-                <img src="images/B5_LOGO NO BG.png" alt="B5 LOGO">
-            <h1>B5 Logistics</h1>
-            </div>
+        <nav id="navbar" aria-label="Main">
+            <a class="logo" href="index.html"><img src="images/B5_LOGO NO BG.png" alt="B5 LOGO">
+            <span class="brand-name">B5 Logistics</span>  </a>
             
-            <ul class="nav-list">
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navList">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-list" id="navList">
                 <li><a href="/">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -32,18 +37,16 @@
         <div class="container">
             <section class="hero">
                 <div class="hero-section">
-                <h1>Foundation en Route</h1>
-                <p>Reliable bulk hauling of construction materials to job sites across Luzon and Visayas</p>
-                <a href="#" class="btn-primary">Get a Quote</a>
-            </div>
+                    <h1>Foundation en Route</h1>
+                    <p>Reliable bulk hauling of construction materials to job sites across Luzon and Visayas</p>
+                    <a href="contact.html" class="btn-primary">Get a Quote</a>
+                </div>
             </section>
+
             <section class="who-we-are">
-                <ul>
-                    <li>WHO WE ARE</li>
-                    <hr>
-                </ul>
-                
-                <div>
+                <p class="eyebrow">Who we are</p>
+                <hr>
+                <div class="intro-text">
                     <h1>Delivering where it matters</h1>
                     <p>B5 Logistics does bulk hauling of construction materials from our <strong> 8 warehouses across Luzon and Visayas</strong>. We work with suppliers delivering goods to construction firms. Our company delivers on time and is very reliable.</p>
                 </div>
@@ -52,7 +55,7 @@
             <section class="cards">
                 <div>
                     <img src="/images/transport 1.png" alt="truck">
-                    <p>Bulk Material Hauling</p> <br>
+                    <h3>Bulk Material Hauling</h3> 
                     <p>We specialize in hauling construction supplies in bulk</p>
                 </div>
 
@@ -64,31 +67,30 @@
 
                 <div>
                     <img src="/images/transport 3.png" alt="">
-                    <p>Schedule On-Time Delivery</p> <br>
+                    <p>Schedule &amp; On-Time Delivery</p> <br>
                     <p>Delivery come on schedule with no hiccups</p>
                 </div>
             </section>
 
             <section class="stats">
-                <div>
-                    <h1>8</h1>
+                <div class="stat">
+                    <p class="stat-number" data-target="8">8</p>
                     <p>Warehouses</p>
-                    
                 </div>
                 <hr>
-                <div>
-                    <h1>2</h1>
+                <div class="stat">
+                    <p class="stat-number" data-target="2">2</p>
                     <p>Major Islands Covered</p>
                 </div>
                 <hr>
-                <div>
-                    <h1>84</h1>
+                <div class="stat">
+                    <p class="stat-number">84</p>
                     <p>Trucks</p>
                 </div>
             </section>
 
             <section class="video-section">
-                <h3>SEE US IN ACTION</h3>
+                <h2 class="eyebrow">See us in action</h2>
                 <div class="video-container" id="videoContainer">
                     <video controls poster="images/truck 1.png" class="truck-video">
                     <source src="media/haul mp4.mp4" type="video/mp4">
@@ -129,9 +131,12 @@
                 <p><a href="tel:+09212612084">Contact Info:  +639212612084</a></p>
                 <p><a href="mailto:b5logistics@gmail.com">Email: b5logistics@gmail.com</a></p>
                 <div class="soc-med">
-                    <img src="images/twitter 1.png" alt="twitter" >
-                    <img src="images/instagram (1) 1.png" alt="ig">
-                    <img src="images/facebook (1) 1.png" alt="fb">
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="B5 Logistics on X (Twitter)"><img src="images/twitter 1.png" alt="twitter" ></a>
+                    
+                    <a href="https://www.instagram.com.christructure" target="_blank" rel="noopener" aria-label="B5 Logistics on Instagram"><img src="images/instagram (1) 1.png" alt="ig"></a>
+                    
+                    <a href="https://www.facebook.com.christructure" target="_blank" rel="noopener" aria-label="B5 Logistics on Facebook"><img src="images/facebook (1) 1.png" alt="fb"></a>
+                    
                 </div>
             </div>
             </div>
