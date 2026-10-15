@@ -21,6 +21,53 @@
     18. Print
     =======================================================*/
 
+/* ========== 2. Reset ========== */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+article, aside, figure, figcaption, footer, header, main, nav, section{
+    display: block;
+}
+
+img, video{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol{list-style: none;}
+
+a {color: inherit;}
+
+button, input, textarea{font: inherit; color: inherit;}
+
+button{
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4{
+    font-size: inherit;
+    line-height: 1.2;
+}
+
 :root{
     --black: #020202;
     --off-white: #f1efe8;
@@ -28,11 +75,7 @@
     --concrete: #8a8c88;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body{
     padding: 0;
