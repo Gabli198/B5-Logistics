@@ -1,27 +1,27 @@
 /* ======================================================== 
     B5 LOGISTICS - styles.css
-    (Mobille first)
-    1.  Variables
-    2.  Reset
-    3.  Base
-    4.  Nav bar
-    5.  Hero
-    6.  Intro
-    7.  Cards
-    8.  Stats
-    9.  Video
-    10. CTA
-    11. Footer
-    12. Inner pages
-    13. Coverage
-    14. Contact
-    15. Animation
-    16. Tablet (min-width 768px)
-    17. Desktop (min-width: 1024px)
-    18. Print
+    (Mobile first)
+    Variables
+    Reset
+    Base
+    Nav bar
+    Hero
+    Intro
+    Cards
+    Stats
+    Video
+    CTA
+    Footer
+    Inner pages
+    Coverage
+    Contact
+    Animation
+    Tablet (min-width 768px)
+    Desktop (min-width: 1024px)
+    Print
     =======================================================*/
 
-/* ========== 1. Variables ========== */
+/* Variables */
 :root{
     --black: #020202;
     --off-white: #f1efe8;
@@ -35,7 +35,7 @@
 }
 
 
-/* ========== 2. Reset ========== */
+/* Reset */
 *, *::before, *::after{
     box-sizing: border-box;
 }
@@ -83,7 +83,7 @@ h1, h2, h3, h4{
 }
 
 
-/* ========== 3. Base ========== */
+/* Base */
 body{
     font-size: 1rem;
     line-height: 1.6;
@@ -133,7 +133,7 @@ body{
 .btn-primary{background-color: var(--safety-green); color: #fff;}
 .btn-dark{background-color: var(--black); color: var(--off-white);}
 
-/* ========== 4. Navbar ========== */
+/* Navbar */
 #navbar {
     position: relative;
     background-color: var(--black);
@@ -225,7 +225,7 @@ body{
 }
 
 
-/* ========== 5. Hero Section ========== */
+/* Hero Section */
 .hero {
     background-image: url("/images/B5\ hero\ image.avif");
     color: var(--off-white);
@@ -240,11 +240,6 @@ body{
 .hero::before {
     content: "";
     background-color: rgba(26, 26, 26, 0.55);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
     position: absolute;
     inset: 0;
 }
@@ -258,7 +253,7 @@ body{
     align-items: flex-start;
     gap: 20px;
     max-width: 640px;
-    animation: fadeUp 0.7 ease-out both;
+    animation: fadeUp 0.7s ease-out both;
 }
 
 .hero-section h1 {
@@ -268,7 +263,7 @@ body{
 }
 
 
-/* ========== 6. Intro (WHO WE ARE) ========== */
+/* Intro (WHO WE ARE) */
 .who-we-are {
     display: flex;
     flex-direction: column;
@@ -313,7 +308,7 @@ body{
     font-size: 1.5rem;
 }
 
-/* ========== 7. Service Cards ========== */
+/* Service Cards */
 .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -339,7 +334,7 @@ body{
 .cards h3  { font-size: 1.0625rem; }
 .cards p   { font-size: 0.9375rem; }
 
-/* ========== 8. Stats ========== */
+/* Stats */
 .stats {
     display: flex;
     flex-direction: column;
@@ -369,7 +364,7 @@ body{
     line-height: 1;
 }
 
-/* ========== 9. Video ========== */
+/* Video */
 .video-section {
     max-width: 800px;
     margin: 0 auto;
@@ -392,7 +387,7 @@ body{
     width: 100%;
     background-color: var(--black);
 }
-/* ========== 10. CTA Banner ========== */
+/* CTA Banner */
 .CTA {
     display: flex;
     flex-direction: column;
@@ -411,7 +406,7 @@ body{
     font-weight: 700;
 }
 
-/* ========== 11. Footer ========== */
+/* Footer */
 
 .footer-section {
     padding: 36px var(--gutter) 20px;
@@ -499,7 +494,7 @@ footer hr {
     font-weight: 700;
 }
 
-/* ========== 12. Inner pages (Services / Contact) ========== */
+/* Service, Contact */
 .text-header {
     display: flex;
     flex-direction: column;
@@ -542,7 +537,7 @@ footer hr {
     height: 220px;
     object-fit: cover;
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow1);
 }
 
 .service-row h2,
@@ -554,122 +549,49 @@ footer hr {
 .service-row p,
 .contact-row p { line-height: 1.7; }
 
-/* TABLET AND UP */
-@media (min-width: 768px) {
-    .service-row, .contact-row {
-        flex-direction: row;
-        align-items: center;
-        gap: 60px;
-    }
+/* Coverage table */
+.coverage { padding: 0 var(--gutter) 56px; }
 
-    .service-row img,
-    .service-row div, .contact-row img, .contact-row div {
-        flex: 1;
-    }
-
-    .service-row img, .contact-row img { height: 380px; }
-
-    .service-row:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-}
-
-/* COVERAGE TABLE: mobile first */
-.coverage-table { display: none; }
+.table-wrap { display: none; }
 
 .coverage-list {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .coverage-list li {
-    background-color: var(--off-white);
-    border-left: 4px solid var(--safety-green);
-    border-radius: 6px;
-    padding: 14px 16px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    padding: 14px 16px;
+    border-left: 4px solid var(--safety-green);
+    border-radius: 6px;
+    background-color: var(--off-white);
 }
 
-.coverage-list span { font-size: 14px; }
+.coverage-list span { font-size: 0.875rem; }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
-
-/* TABLET AND UP */
-@media (min-width: 768px) {
-    .coverage-list { display: none; }
-
-    .table-wrap {
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        margin-bottom: 40px;
-    }
-
-    .coverage-table {
-        display: table;
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 15px;
-    }
-
-    .coverage-table th,
-    .coverage-table td { padding: 16px 20px; }
-
-    .coverage-table thead {
-        background-color: var(--safety-green);
-        color: white;
-    }
-
-    .coverage-table tbody tr { background-color: white; }
-    .coverage-table tbody tr:nth-child(even) { background-color: var(--off-white); }
-
-    .coverage-table th:nth-child(1),
-    .coverage-table td:nth-child(1) { text-align: left; }
-
-    .coverage-table th:nth-child(2),
-    .coverage-table td:nth-child(2) { text-align: center; font-weight: bold; }
-
-    .coverage-table th:nth-child(3),
-    .coverage-table td:nth-child(3) { text-align: right; }
-}
-
-/* PRINT */
-@media print {
-    .coverage-table { display: table; }   /* always show the table on paper */
-    .coverage-list { display: none; }
-    .coverage-table thead { background-color: black; color: white; }
-    .table-wrap { box-shadow: none; }
-}
-
-/* CONTACT FORM + INFO: mobile first */
+/* Contact Form + Info */
 .contact {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 50px 20px;
+    padding: 48px var(--gutter);
 }
 
 .contact fieldset {
-    border: 1.5px solid var(--concrete);
-    border-radius: 8px;
+    min-width: 0;
     padding: 24px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1.5px solid var(--concrete);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow1);
 }
 
 .contact legend {
-    color: var(--safety-green);
-    font-weight: bold;
     padding: 0 8px;
+    color: var(--safety-green);
+    font-weight: 700;
 }
 
 .field {
@@ -680,19 +602,18 @@ footer hr {
 }
 
 .field label {
-    font-size: 13px;
-    color: var(--concrete);
+    font-size: 0.8125rem;
+    color: var(--concrete-dark);
 }
 
 .field input,
 .field textarea {
     width: 100%;
     padding: 12px;
+    font-size: 0.9375rem;
+    background-color: #fff;
     border: 1px solid var(--concrete);
     border-radius: 4px;
-    font: inherit;
-    font-size: 15px;
-    background-color: white;
 }
 
 .field textarea {
@@ -701,12 +622,8 @@ footer hr {
 }
 
 .field input:focus,
-.field textarea:focus {
-    outline: 2px solid var(--safety-green);
-    border-color: var(--safety-green);
-}
+.field textarea:focus { border-color: var(--safety-green); }
 
-/* buttons */
 .form-buttons {
     display: flex;
     justify-content: center;
@@ -716,69 +633,225 @@ footer hr {
 
 .btn-submit,
 .btn-reset {
-    font: inherit;
-    font-weight: bold;
+    min-height: 44px;
     padding: 12px 32px;
+    font-weight: 700;
     border-radius: 6px;
-    cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .btn-submit {
+    color: #fff;
     background-color: var(--safety-green);
-    color: white;
-    border: none;
 }
 
 .btn-reset {
-    background-color: transparent;
-    color: var(--concrete);
+    color: var(--concrete-dark);
     border: 1.5px solid var(--concrete);
 }
 
-/* info box */
+.form-status {
+    min-height: 1.6em;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-status.success { color: var(--safety-green); }
+.form-status.error   { color: #b3261e; }
+
 .contact-info {
-    border: 1.5px solid var(--concrete);
-    border-radius: 8px;
     padding: 24px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1.5px solid var(--concrete);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow1);
 }
 
 .contact-info h2 {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--safety-green);
-    font-size: 22px;
     margin-bottom: 8px;
+    color: var(--safety-green);
+    font-size: 1.375rem;
 }
 
-.contact-info h2 img {
-    width: 28px;
-    height: 28px;
-}
+.contact-info h2 img { width: 28px; height: 28px; }
 
 .info-row {
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    gap: 4px;
     padding: 14px 0;
     border-bottom: 1px solid var(--concrete);
 }
 
-.info-row:last-child { border-bottom: none; }
+.info-row:last-child { border-bottom: 0; }
+.info-row dt { font-weight: 700; }
+.info-row dd { overflow-wrap: anywhere; }
+.info-row a  { text-decoration: none; }
 
-.info-row dt {
-    font-weight: bold;
-    min-width: 110px;
+/*  Animation */ 
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: none; }
 }
 
-.info-row a {
-    color: inherit;
-    text-decoration: none;
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }
 
-/* DESKTOP: form left, info right */
+/* Tablet (min 768 px) */
+@media (min-width: 768px) {
+    :root { --gutter: 40px; }
+
+    /* nav: full links, no hamburger */
+    #navbar { min-height: 80px; }
+    .nav-toggle { display: none; }
+
+    .nav-list,
+    .nav-list.open {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        padding: 0;
+        background: none;
+        animation: none;
+    }
+
+    .nav-list a {
+        padding: 6px 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-list a[aria-current="page"] { border-bottom-color: var(--safety-green); }
+
+    .hero { min-height: 520px; padding: 96px var(--gutter); }
+
+    .who-we-are { padding: 72px var(--gutter); }
+    .intro-text h2 { font-size: 1.875rem; }
+
+    .cards { grid-template-columns: repeat(3, 1fr); padding-bottom: 72px; }
+
+    .stats { flex-direction: row; align-items: stretch; margin-bottom: 72px; }
+    .stats hr { display: block; width: 4px; border: 0; background-color: var(--concrete); }
+    .stat { flex: 1; padding: 48px 24px; }
+    .stat ~ .stat { border-top: 2px solid var(--safety-green); }
+    .stat-number { font-size: 3.5rem; }
+
+    .video-section { padding-bottom: 72px; }
+
+    .CTA {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 32px 40px;
+        text-align: left;
+    }
+
+    .footer-section { padding: 40px var(--gutter) 24px; }
+
+    .big-3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px 48px;
+        text-align: left;
+    }
+
+    .logo-links { flex-direction: row; align-items: flex-start; gap: 48px; }
+    .footer-logo,
+    .footer-links,
+    .footer-contact { align-items: flex-start; }
+
+    /* inner pages: image and text side by side (zigzag) */
+    .text-header { min-height: 200px; }
+
+    .service-row,
+    .contact-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .service-row img,
+    .service-row div,
+    .contact-row img,
+    .contact-row div {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .service-row img,
+    .contact-row img { height: 320px; }
+
+    .service-row:nth-child(even),
+    .contact-row { flex-direction: row-reverse; }   /* text left, image right */
+
+    /* coverage: real table replaces the mobile list */
+    .coverage-list { display: none; }
+
+    .table-wrap {
+        display: block;
+        overflow: hidden;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow1);
+    }
+
+    .coverage-table {
+        width: 100%;
+        font-size: 0.9375rem;
+    }
+
+    .coverage-table th,
+    .coverage-table td { padding: 16px 20px; }
+
+    .coverage-table thead {
+        color: #fff;
+        background-color: var(--safety-green);
+    }
+
+    .coverage-table tbody tr { background-color: #fff; }
+    .coverage-table tbody tr:nth-child(even) { background-color: var(--off-white); }
+
+    .coverage-table th:nth-child(1),
+    .coverage-table td:nth-child(1) { text-align: left; }
+
+    .coverage-table th:nth-child(2),
+    .coverage-table td:nth-child(2) { text-align: center; font-weight: 700; }
+
+    .coverage-table th:nth-child(3),
+    .coverage-table td:nth-child(3) { text-align: right; }
+
+    .contact { padding: 64px var(--gutter); }
+
+    .contact fieldset,
+    .contact-info { padding: 32px 28px; }
+
+    .info-row { flex-direction: row; gap: 16px; }
+    .info-row dt { min-width: 130px; }
+}
+
+/* Desktop */
 @media (min-width: 1024px) {
+    :root { --gutter: 70px; }
+
+    .hero { min-height: 600px; padding: 120px var(--gutter); }
+
+    .who-we-are { padding: 88px var(--gutter); }
+
+    .stat-number { font-size: 3.625rem; }
+
+    .service-row img,
+    .contact-row img { height: 380px; }
+
+    /* contact: form on the left, info on the right */
     .contact {
         flex-direction: row;
         align-items: flex-start;
@@ -786,12 +859,63 @@ footer hr {
     }
 
     .contact-form { flex: 3; }
-
     .contact-info { flex: 2; }
+
+    /* hover states (need a mouse, so they live in the desktop query) */
+    .nav-list a:hover { color: var(--safety-green); }
+    .btn-primary:hover { background-color: #2f6f2a; }
+    .btn-dark:hover { background-color: #2a2a2a; }
+    .btn-submit:hover { background-color: #2f6f2a; }
+    .btn-reset:hover { background-color: var(--off-white); }
+    .footer-links a:hover,
+    .footer-contact a:hover { text-decoration: underline; }
+    .soc-med a:hover { opacity: 0.75; }
 }
 
-/* PRINT: forms don't work on paper, so show contact info only */
+/* Print */
 @media print {
-    .contact-form { display: none; }
-    .contact-info { box-shadow: none; border: none; }
+    body { color: #000; background: #fff; }
+
+    /* Invisible on paper */
+    .nav-toggle,
+    .nav-list,
+    .video-section,
+    .CTA,
+    .contact-form,
+    .soc-med,
+    .btn-primary,
+    .hero::before { display: none !important; }
+
+    #navbar,
+    .text-header,
+    .footer-section {
+        color: #000;
+        background: none;
+    }
+
+    .hero {
+        min-height: 0;
+        padding: 16px var(--gutter);
+        color: #000;
+        background: none;
+    }
+
+    .cards article,
+    .stats,
+    .coverage-list li { background: none; box-shadow: none; }
+
+    .service-row img,
+    .contact-row img,
+    .contact-info,
+    .table-wrap { box-shadow: none; }
+
+    /* always print the table, never the mobile list */
+    .table-wrap { display: block; }
+    .coverage-list { display: none; }
+    .coverage-table { width: 100%; }
+    .coverage-table th,
+    .coverage-table td { padding: 8px 12px; border: 1px solid #000; }
+    .coverage-table thead { color: #fff; background-color: #000; }
+
+    a { text-decoration: none; }
 }
