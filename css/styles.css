@@ -369,33 +369,29 @@ body{
     line-height: 1;
 }
 
-/* Video Section */
-.video-section{
-    text-align: center;
+/* ========== 9. Video ========== */
+.video-section {
     max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 0 var(--gutter) 56px;
+    text-align: center;
 }
 
-.video-section h3{
-    color: var(--safety-green);
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+.video-section .eyebrow {
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
-.truck-video{
-    position: relative;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 6px;
+.video-container {
     overflow: hidden;
+    border-radius: 6px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    display: block;
-    margin-bottom: 4rem;
 }
 
+.truck-video {
+    width: 100%;
+    background-color: var(--black);
+}
 /* CTA*/
 .CTA{
     width: 100%;
