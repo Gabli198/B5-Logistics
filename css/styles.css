@@ -1,3 +1,26 @@
+/* ======================================================== 
+    B5 LOGISTICS - styles.css
+    (Mobille first)
+    1.  Variables
+    2.  Reset
+    3.  Base
+    4.  Nav bar
+    5.  Hero
+    6.  Intro
+    7.  Cards
+    8.  Stats
+    9.  Video
+    10. CTA
+    11. Footer
+    12. Inner pages
+    13. Coverage
+    14. Contact
+    15. Animation
+    16. Tablet (min-width 768px)
+    17. Desktop (min-width: 1024px)
+    18. Print
+    =======================================================*/
+
 :root{
     --black: #020202;
     --off-white: #f1efe8;
