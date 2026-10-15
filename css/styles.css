@@ -21,6 +21,19 @@
     18. Print
     =======================================================*/
 
+/* ========== 1. Variables ========== */
+:root{
+    --black: #020202;
+    --off-white: #f1efe8;
+    --safety-green: #3D8B37;
+    --concrete: #8a8c88;
+    --concrete-dark: #5b5d59;
+    --gutter: 20px;
+    --radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 /* ========== 2. Reset ========== */
 *, *::before, *::after{
     box-sizing: border-box;
@@ -68,12 +81,6 @@ h1, h2, h3, h4{
     line-height: 1.2;
 }
 
-:root{
-    --black: #020202;
-    --off-white: #f1efe8;
-    --safety-green: #3D8B37;
-    --concrete: #8a8c88;
-}
 
 
 
