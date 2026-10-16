@@ -227,7 +227,7 @@ body{
 
 /* Hero Section */
 .hero {
-    background-image: url("/images/B5\ hero\ image.avif");
+    background-image: url("../images/B5\ hero\ image.avif");
     color: var(--off-white);
     min-height: 420px;
     position: relative;
